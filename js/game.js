@@ -46,8 +46,8 @@ Game = {
 
 		Game.animationLoop();
 
-		shoot = new Audio('Laser_Shoot2.wav');
-		boom = new Audio('Explosion5.wav');
+		var shoot = new Audio('Laser_Shoot2.wav');
+		var boom = new Audio('Explosion5.wav');
 	},
 	
 	layout:function(){
@@ -104,7 +104,7 @@ Game = {
 	},
 
 	backgroundMusic: function() {
-		sound = new Audio('Canabalt.mp3');
+		var sound = new Audio('Canabalt.mp3');
 		sound.volume = 0.5;
 		sound.play();
 	},
