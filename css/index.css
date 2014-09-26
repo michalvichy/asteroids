@@ -1,0 +1,103 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;			
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+}
+
+#score, #life {
+	font-family: 'Orbitron', sans-serif;
+	position: relative;
+	z-index: 100;
+	color: white;
+	font-size: 20px;
+	margin-left: 5px;
+}
+#new-game, #start, #info, #steer, #authors, .ranking {
+	background-color: rgba(255,255,255,0.9);
+	display: none;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 22px;
+	margin-top: 5%;
+	padding: 10px;
+	position: relative;
+	text-align: center;
+	z-index: 100;
+}
+
+#new-game:hover {
+	cursor: pointer;
+}
+#start {
+	display: block;
+}
+
+#start p:nth-child(1), #new-game {
+	font-size: 30px;
+}
+
+#start p:nth-child(2) {
+	font-size: 60px;
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 400px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+#start span:hover {
+	text-decoration: underline;
+}
+
+#start p:nth-child(2):hover, #start span:hover {
+	cursor: pointer;
+}
+
+#info, #steer, #authors {
+	margin-top: 5px;
+	display: none;
+}
+
+#start p:nth-child(2):hover {
+	box-shadow: 0px 0px 90px grey;
+}
+
+.ranking {
+	display: block;
+}
+
+tr>th {
+	text-align: center;
+}
+
+.ranking {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#video {
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: 100%;
+	height: auto;
+	z-index: -100px;
+	overflow: hidden;
+}
